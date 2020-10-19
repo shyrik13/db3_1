@@ -1,0 +1,6 @@
+userid=admin
+control=nem-min-vieta-info.ctl
+log=nem-min-vieta-info.log
+bad=nem-min-vieta-info.bad
+data=nem-min-vieta-info.dat
+direct=true

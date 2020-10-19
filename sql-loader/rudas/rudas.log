@@ -1,0 +1,74 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sat Oct 3 21:54:35 2020
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   rudas.ctl
+Data File:      rudas.dat
+  Bad File:     rudas.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table RUDAS_VIETA, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                  FIRST     *   ,       CHARACTER            
+GEOMETRIJA                        DERIVED     *           COLUMN OBJECT        
+
+*** Fields in GEOMETRIJA
+SDO_GTYPE                                                 CONSTANT
+    Value is '2003'
+SDO_ELEM_INFO                     DERIVED     *           VARRAY               
+    Count for VARRAY
+        CONSTANT '3'
+
+*** Fields in GEOMETRIJA.SDO_ELEM_INFO
+X                                   FIRST     *   ,       CHARACTER            
+*** End of fields in GEOMETRIJA.SDO_ELEM_INFO
+
+SDO_ORDINATES                     DERIVED     *           VARRAY               
+    Terminator string : '|/'
+
+*** Fields in GEOMETRIJA.SDO_ORDINATES
+Y                                   FIRST     *   ,       CHARACTER            
+*** End of fields in GEOMETRIJA.SDO_ORDINATES
+
+*** End of fields in GEOMETRIJA
+
+
+The following index(es) on table RUDAS_VIETA were processed:
+index ADMIN.CONSTRAINT_RUDAS_VIETA loaded successfully with 12 keys
+
+Table RUDAS_VIETA:
+  12 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :     100
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            12
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        2
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sat Oct 03 21:54:35 2020
+Run ended on Sat Oct 03 21:54:37 2020
+
+Elapsed time was:     00:00:02.83
+CPU time was:         00:00:00.09

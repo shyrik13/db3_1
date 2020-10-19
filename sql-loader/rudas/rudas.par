@@ -1,0 +1,6 @@
+userid=admin
+control=rudas.ctl
+log=rudas.log
+bad=rudas.bad
+data=rudas.dat
+direct=true

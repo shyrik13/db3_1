@@ -1,0 +1,67 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Oct 4 13:34:29 2020
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   nem-min-vieta-info.ctl
+Data File:      nem-min-vieta-info.dat
+  Bad File:     nem-min-vieta-info.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table NEMETAL_MINERAL_VIETA_INFO, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+INFO_ID                             FIRST     *   ,  O(") CHARACTER            
+NEMETAL_MIN_VIETA_ID                 NEXT     *   ,  O(") CHARACTER            
+NOSAUKUMS                            NEXT     *   ,  O(") CHARACTER            
+TIPS                                 NEXT     *   ,  O(") CHARACTER            
+PAPILDINFORMACIJA                    NEXT     *   ,  O(") CHARACTER            
+GEO_SLANIS_INFO_ID                   NEXT     *   ,  O(") CHARACTER            
+
+
+Referential Integrity Constraint/Trigger Information:
+NULL, UNIQUE, and PRIMARY KEY constraints are unaffected.
+
+Constraint NEMETAL_MINERAL_VIETA_INFO.SYS_C007484 was disabled and novalidated before the load.
+Constraint NEMETAL_MINERAL_VIETA_INFO.SYS_C007485 was disabled and novalidated before the load.
+The following index(es) on table NEMETAL_MINERAL_VIETA_INFO were processed:
+index ADMIN.CONSTRAINT_NEMETAL_MINERAL_VIETA_INFO loaded successfully with 13 keys
+index ADMIN.SYS_C007483 loaded successfully with 13 keys
+
+Table NEMETAL_MINERAL_VIETA_INFO has no constraint exception table.
+No CHECK, REFERENTIAL constraints were re-enabled after the load.
+
+Table NEMETAL_MINERAL_VIETA_INFO:
+  13 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            13
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        2
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Oct 04 13:34:29 2020
+Run ended on Sun Oct 04 13:34:32 2020
+
+Elapsed time was:     00:00:02.57
+CPU time was:         00:00:00.06
